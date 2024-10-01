@@ -1,0 +1,116 @@
+<style>
+	
+/* DATATABLES */
+	
+body.DTTT_Print {
+	background: #fff;
+}
+
+.DTTT_Print #page-wrapper {
+	margin: 0;
+	background: #fff;
+}
+
+button.DTTT_button, div.DTTT_button, a.DTTT_button {
+	border: 1px solid #e7eaec;
+	background: #fff;
+	color: #676a6c;
+	box-shadow: none;
+	padding: 6px 8px;
+}
+
+button.DTTT_button:hover, div.DTTT_button:hover, a.DTTT_button:hover {
+	border: 1px solid #d2d2d2;
+	background: #fff;
+	color: #676a6c;
+	box-shadow: none;
+	padding: 6px 8px;
+}
+
+.dataTables_filter label {
+	margin-right: 5px;
+}
+
+.ui-datatable table, th, td; tr {
+	table-layout: auto;
+	
+	
+}
+
+.ui-datatable tfoot td, tbody td {
+	    font-family: "open sans" , "Helvetica Neue" , Helvetica, Arial, sans-serif !important;
+	    font-size:85%;
+    padding: 2px 5px !important;
+    }
+.ui-datatable thead th{
+	font-family: "open sans" , "Helvetica Neue" , Helvetica, Arial, sans-serif !important;
+	    font-size:90%;
+}
+
+.ui-datatable-odd {
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+
+.ui-datatable-even {
+	background: none repeat scroll 0 0 #F2F5F9;
+}
+
+ .ui-datatable tr{
+	border: 1px solid lightgray !important;
+	height: 28px !important;
+
+}
+
+
+ .ui-datatable tr input{
+	height: 22px !important;
+	padding-top: 2px !important;
+
+}
+
+.ui-datatable thead th {
+	text-align: left;
+	border-top: 1px solid lightgray !important;
+	height: 32px !important;
+}
+
+.ui-datatable .ui-column-filter {
+	display: inline-block !important;
+	background-color: #FFFFFF !important;
+	background-image: none !important;
+	border: 1px solid #e5e6e7 !important;
+	border-radius: 1px !important;
+	box-shadow: none !important;
+}
+
+.ui-widget-header {
+	background-color: #FFFFFF;
+	border: 1px solid #ddd;
+}
+
+.ui-state-default {
+	background-color: #FFFFFF;
+	
+}
+
+.ui-datatable .ui-sortable-column-icon {
+float: right !important;
+}
+
+.ui-datatable input.btn{
+    background-color: #1c84c6 !important;
+    color: #FFFFFF !important;
+    font-family: 'Open Sans';
+    font-size: 10px;
+    font-weight: 600 !important;
+    padding: 3px 8px !important;
+    text-shadow: none;
+}
+
+td .btn-sm{margin:2px 0px 2px 4px!important;}
+/* Icon Button */
+.btn-success {
+    
+    color: #FFFFFF !important;
+}    
+</style>

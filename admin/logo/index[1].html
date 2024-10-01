@@ -1,0 +1,769 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"  />     
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=UTF-8" />
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-2022-JP" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE6" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="Mozilla/4.0" />
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Insurance,motor insurance,health insurance,universalsompo, general insurance,Motor insurance best policy">
+    <title>Welcome to Universal Sompo</title>
+    <style type="text/css">
+<!--
+@import url("css/universal.css");
+
+-->
+</style>
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.3.2.js"></script>
+
+    <script language="javascript" type="text/javascript" src="js/popup.js"></script>
+    <script language="javascript" type="text/javascript" src="js/JScript.js"></script>
+
+    <script language="javascript" type="text/javascript" src="js/swf.js"></script>
+
+    <script language="javascript" type="text/javascript" src="js/menu.js"></script>
+
+    <script src="ajaxmail.js" language="javascript"></script>
+
+    <script language="javascript" type="text/javascript">   
+$(document).ready(function(){
+	
+	$(".accordion h3:first").addClass("slow");
+	$(".accordion p:yes(:first)").hide();
+
+	$(".accordion h3").click(function(){
+		$(this).next("p").slideToggle("slow")
+		.siblings("p:visible").slideUp("slow");
+		$(this).toggleClass("active");
+		$(this).siblings("h3").removeClass("active");
+	});
+
+});
+
+
+///Heading Image show
+$(document).ready(function(){
+
+	$(".menu2 a").append("<em></em>");
+	
+	$(".menu2 a").hover(function() {
+		$(this).find("em").animate({opacity: "show", top: "-75"}, "slow");
+		var hoverText = $(this).attr("title");
+	    $(this).find("em").text(hoverText);
+	}, function() {
+		$(this).find("em").animate({opacity: "hide", top: "-85"}, "fast");
+	});
+
+
+});
+
+var availHeight = screen.availHeight; 
+var availWidth = screen.availWidth; 
+x = window.screenTop; 
+y = window.screenLeft;
+function OpenHealthIndividual()
+{
+ 
+window.open ("https://www.usgi.co.in/indhealth", "mywindow","resizable=1,toolbar=1,location=1,directories=1,addressbar=1,scrollbars=1,status=1,menubar=1,top=0,left=0, screenX="+x+",screenY="+y+",width="+availWidth+",height="+availHeight+"");
+}
+
+
+function OpenTravelPage()
+{  
+
+window.open ("https://www.usgi.co.in/Travel", "mywindow","resizable=1,toolbar=1,location=1,directories=1,addressbar=1,scrollbars=1,status=1,menubar=1,top=0,left=0, screenX="+x+",screenY="+y+",width="+availWidth+",height="+availHeight+"");
+  
+}
+function OpenMotorInsurance()
+{
+window.open ("https://www.usgi.co.in/MotorRenewals", "mywindow","resizable=1,toolbar=1,location=1,directories=1,addressbar=1,scrollbars=1,status=1,menubar=1,top=0,left=0, screenX="+x+",screenY="+y+",width="+availWidth+",height="+availHeight+"");
+}
+function OpenIndHealthPage()
+{  
+
+window.open ("https://www.usgi.co.in/indhealth", "mywindow","resizable=1,toolbar=1,location=1,directories=1,addressbar=1,scrollbars=1,status=1,menubar=1,top=0,left=0, screenX="+x+",screenY="+y+",width="+availWidth+",height="+availHeight+"");
+  
+}
+
+function CallGreviance()
+{
+
+    var width = 1000;
+    var height = 950;
+    var left = parseInt((screen.availWidth/2) - (width/2));
+    var top = parseInt((screen.availHeight/2) - (height/2));
+    var windowFeatures = "width=" + width + ",height=" + height + ",status,resizable,left=" + left + ",top=" + top + ",scrollbars=1,screenX=" + left + ",screenY=" + top;
+    myWindow = window.open("http://usgi.co.in/igms/ComplaintsPolHolder.aspx", "subWind", windowFeatures);
+
+
+
+
+//newwindow=window.open("Greviance.aspx",'','width=400px, height=450px, status=no,resizable= no, scrollbars=yes, toolbar=no, location=no, menubar=no');
+//if (window.focus) {newwindow.focus()}
+//document.getElementById("Grevience").display="block";
+//makeRequest("Name="+document.form1.Name.value+"&PhoneNo="+document.form1.PhoneNo.value+"&Products="+document.form1.Products.value+"&EmailID="+document.form1.EmailID.value+"&Feedback="+document.form1.Feedback.value);
+}
+    
+function IsNumeric(sText)
+{
+   var ValidChars = "0123456789.-";
+   var IsNumber=true;
+   var Char;
+   for (i = 0; i < sText.length && IsNumber == true; i++) 
+      {
+      Char = sText.charAt(i);
+      if (ValidChars.indexOf(Char) == -1)
+         {
+         IsNumber = false;
+         }
+      }
+   return IsNumber;
+}
+function check()
+{
+
+var Name=document.form1.Name.value
+var PhoneNo=document.form1.PhoneNo.value
+var EmailID=document.form1.EmailID.value
+var Feedback=document.form1.Feedback.value
+var reg = new RegExp("^[A-Za-z0-9_-]{1,}[.]?[A-Za-z0-9_-]{1,}@{1}([A-Za-z0-9_-]+[.]{1})+[A-Za-z0-9_-]{1,}$");
+if((Name=="") ||!isNaN(Name) || (Name=="Name"))
+{
+alert("Please enter your name.");
+document.form1.Name.focus();
+return false;
+}
+else if(containsdigit(Name)==true)
+{
+alert("Name contains characters.");
+document.form1.Name.focus();
+return false;
+}	
+else if (Name.charAt(0)==" ")
+{
+alert("Name can not start with blank.")
+document.form1.Name.focus();
+return false;
+}
+ if(PhoneNo=="")
+{
+alert("Please enter your contact number.");
+document.form1.PhoneNo.focus();
+return false;
+}
+else if(IsNumeric(PhoneNo)==false)
+{
+alert("Please enter a numeric value.");
+document.form1.PhoneNo.focus();
+return false;
+ }
+if(EmailID=="")
+{
+alert("Please enter your email id.");
+document.form1.EmailID.focus();
+return false;
+}
+ else if(!reg.test(EmailID)) 
+{
+alert("Invalid email id. Please enter your correct email id.");
+document.form1.EmailID.focus();
+return false;
+}	
+ 
+ if(Feedback=="")
+{
+alert("Please enter your enquiry/feedback/suggestion.");
+document.form1.Feedback.focus();
+return false;
+}
+ if ((document.form1.Feedback.value!="")&&(document.form1.Feedback.value.length>1000))
+	 {
+	 alert("Feedback cannot be greater than 1000 character.")
+	 document.form1.Feedback.focus();
+	 return false;
+	 } 
+	 else
+	{ 
+makeRequest("Name="+document.form1.Name.value+"&PhoneNo="+document.form1.PhoneNo.value+"&Products="+document.form1.Products.value+"&EmailID="+document.form1.EmailID.value+"&Feedback="+document.form1.Feedback.value);
+}
+}
+function clearpopup()
+{
+document.formcontact.cname.value=" ";;
+document.formcontact.cphone.value=" ";
+document.formcontact.cemailid.value=" ";
+document.formcontact.ccomment.value=" ";
+document.formcontact.cpolicyno.value=" ";
+
+}
+
+
+function containsdigit(param)
+{
+mystrLen = param.length;
+for(i=0;i<mystrLen;i++)
+{
+if((param.charAt(i)=="0") || (param.charAt(i)=="1") || (param.charAt(i)=="2") || (param.charAt(i)=="3") || (param.charAt(i)=="4") || (param.charAt(i)=="5") || (param.charAt(i)=="6") || (param.charAt(i)=="7") || (param.charAt(i)=="8") || (param.charAt(i)=="9") || (param.charAt(i)=="/"))
+{
+return true;
+}
+}
+return false;
+}
+function containsalpha(param)
+{
+mystrLen = param.length;
+for(i=0;i<mystrLen;i++)
+{
+if((param.charAt(i)<"0")||(param.charAt(i)>"9"))
+{
+return true;
+}
+}
+return false;
+}
+function containswrong(param){
+strLen1 = param.length;
+
+for(i=0;i<strLen1;i++)
+{
+if((param.charAt(i)==";") || (param.charAt(i)=="=") || (param.charAt(i)=="+") || (param.charAt(i)=="*") || (param.charAt(i)=="#") || (param.charAt(i)=="$") || (param.charAt(i)=="%") || (param.charAt(i)=="^") || (param.charAt(i)=="?") || (param.charAt(i)=="@")||(param.charAt(i)=="/") || (param.charAt(i)=="<") || (param.charAt(i)==">")|| (param.charAt(i)=="-") || (param.charAt(i)=="~"))
+{
+return true;
+}
+}
+return false;
+}
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+    </script>
+<SCRIPT LANGUAGE="javascript">
+
+function OnChange(dropdown)
+{
+    var myindex  = dropdown.selectedIndex;
+    var SelValue = dropdown.options[myindex].value;
+  
+    if(SelValue =="Claim")
+    {
+    document.getElementById("policynum").style.display="Block";
+  //  document.getElementById("policynumD").style.display="none";
+     document.getElementById("productrow").style.display="Block";
+   // document.getElementById("productrowD").style.display="none";
+    }
+     if(SelValue =="Inquiry")
+    {
+    document.getElementById("policynum").style.display="none";
+  //  document.getElementById("policynumD").style.display="Block";
+      document.getElementById("productrow").style.display="Block";
+  //  document.getElementById("productrowD").style.display="none";
+    }
+      if(SelValue =="other")
+    {
+    document.getElementById("policynum").style.display="none";
+  //  document.getElementById("policynumD").style.display="Block";
+    document.getElementById("productrow").style.display="none";
+  //  document.getElementById("productrowD").style.display="Block";
+    }
+}
+
+function callhealthLibrary()
+{
+document.getElementById("PopupDivAskExpert").style.display="block";
+//var answer = confirm("USGI makes no representations or warranties of any kind, express or implied about the completeness, accuracy, reliability, suitability or availability with respect to link or the information, services or related graphics contained on the website for any purpose. Any reliance you place on such material is therefore strictly at your own risk. In no circumstances shall USGI be liable to you, directly or indirectly, or any other third parties for any loss or damage arising directly or indirectly from your use of or inability to use, this site or any of the material contained in it. Through this website you are able to link to other websites which are also not under the control of USGI. We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorsement of  the views expressed within them. At all times USGI recommends that you seek advice/counsel from your own doctors/medical resources.")
+//	if (answer){		
+//		window.location = "http://www.healthlibrary.com/helpdesk.htm";
+//	}
+//else{
+//		//alert("Thanks for sticking around!")
+//	}
+}
+
+function RedirectTopage()
+{
+window.location = "http://www.healthlibrary.com/helpdesk.htm";
+}
+function CloseDiv()
+{
+document.getElementById("PopupDivAskExpert").style.display="none";
+}
+function callPolicyHolder()
+{
+
+window.open ("http://www.policyholder.gov.in", "mywindow","resizable=1,toolbar=1,location=1,directories=1,addressbar=1,scrollbars=1,status=1,menubar=1,top=0,left=0, screenX="+window.screenTop+",screenY="+window.screenLeft+",width=1200,height=500");
+  
+//window.open ("http://www.policyholder.gov.in", "mywindow","resizable=1,toolbar=1,location=1,directories=1,addressbar=1,scrollbars=1,status=1,menubar=1,top=0,left=0, screenX="+window.screenTop+",screenY="+window.screenLeft+",width=1200,height=500");
+}
+
+</SCRIPT>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33084329-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+ <div id="container">
+        <div id="main">
+            <div id="left_panel">
+                <h1 class="logo">
+                    <a href="index.html">Universal Sompo</a></h1>
+                <ul id="nav">
+                    <div style="position: relative" onmouseover="MM_showHideLayers('Layer1','','show')"
+                        onmouseout="MM_showHideLayers('Layer1','','hide')">
+                        <div id="Layer1">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                                <tr>
+                                    <td bgcolor="#FFFFFF" class="text" style="border-bottom: 1px solid #CCCCCC">
+                                        <a href="about-us.html">About Us </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#FFFFFF" class="text" style="border-bottom: 1px solid #CCCCCC">
+                                        <a href="our-vision.html">Our Vision </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#FFFFFF" class="text" style="border-bottom: 1px solid #CCCCCC">
+                                        <a href="why-universal-sompo.html">Why Universal Sompo </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#FFFFFF" class="text" style="border-bottom: 1px solid #CCCCCC">
+                                        <a href="message-from-chairman.html">Message from Our Chairman </a>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td bgcolor="#FFFFFF" class="text" style="border-bottom: 1px solid #CCCCCC">
+                                        <a href="financial-information.html">Financial Information </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div style="position: relative" onmouseover="MM_showHideLayers('Layer2','','show')"
+                        onmouseout="MM_showHideLayers('Layer2','','hide')">
+                        <div id="Layer2">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                                <tr>
+                                    <td bgcolor="#FFFFFF" class="text" style="border-bottom: 1px solid #CCCCCC">
+                                        <a href="retail.html">Retail</a></td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#FFFFFF" class="text" style="border-bottom: 1px solid #CCCCCC">
+                                        <a href="commercial.html">Commercial</a></td>
+                                </tr>
+ <tr>
+                                    <td bgcolor="#FFFFFF" class="text" style="border-bottom: 1px solid #CCCCCC">
+                                        <a href="microinsurance.html">Micro Insurance</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                     <li><a href="Index.Html">Home</a></li>
+                    <li onmouseover="MM_showHideLayers('Layer1','','show')" onmouseout="MM_showHideLayers('Layer1','','hide')">
+                        <a href="#">About Us </a></li>
+                    <li onmouseover="MM_showHideLayers('Layer2','','show')" onmouseout="MM_showHideLayers('Layer2','','hide')">
+                        <a href="#">Our Products</a></li>
+                    <li><a href="branchlocations.aspx">Contact Us</a></li>
+                   
+                    <li><a href="Claim.html">Claims</a></li><li><a href="careers.html">Careers</a></li>
+                    <li><a href="Public_disclosure.html">Public disclosure</a></li>
+                
+                </ul>
+                
+                                        <div>
+                                        <h3 class="leftpanelpink"  align="center">Links</h3>
+                                        <!--<a href="BuyOnlinePolicy.html" ><h3 class="leftpanel"style="width: 208px">Buy Online Policy <img src="image/new.gif" /></h3></a>-->
+                                       <!-- <a onclick="OpenTravelPage()" ><h3 class="leftpanel"style="width: 220px">Buy Travel Insurance</h3></a>
+                                        <a onclick="OpenIndHealthPage()" ><h3 class="leftpanel"style="width: 220px">Buy Individual Health Insurance</h3></a>-->
+                                         <h3 class="leftpanel"style="width: 240px"><a onclick="callhealthLibrary()">Ask A Health Expert <a onclick="callhealthLibrary()"><img src="image/HELP.jpg"   style="border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none"></a></a></h3>
+                                        <a onclick="callfastcontact()"><h3 class="leftpanel" style="width: 220px"><blink>Fast Claim Notification</blink></h3></a>                                      
+                                        <a onclick = "CallGreviance()"><h3 class = "leftpanel" style="width: 220px"><blink>Grievance Notification</blink></h3></a>
+                                        <a href="Downloadpage.html"><h3 class="leftpanel" style="width: 220px">Download Section</h3></a>
+                                          <a href="garageSearch.aspx"><h3 class="leftpanel" style="width: 220px">Search Garage near to you </h3></a>
+                                          <a href="HospitalList.aspx"><h3 class="leftpanel" style="width: 220px">Search Hospital near to you</h3></a>
+                                        <a onclick="callPolicyHolder()"><h3 class="leftpanel" style="width: 220px">Policy Holders' Link - IRDA</h3></a>
+                                        <!--  <a href="message-from-chairman.html"><h3 class="leftpanel" style="width: 220px">Message From chairman</h3></a>-->
+                                          
+                                        </div>
+                                       
+                <div id="banner">
+                    <form name="form1" id="form1" method="post" style="margin: 0px; padding: 0px;">
+                        &nbsp;</form>
+                </div>
+            </div>
+            <div style="position: absolute; top: 0px; left: 250px;">
+            </div>
+            <div id="right_panel">
+                <div id="top_header">
+                    <div id="divinquiry">
+                      
+                            <a>
+                                <img src="image/topband_new.gif" width="461" height="59" align="right" style="padding-right: 10px;
+                                    padding-top: 4px;" vspace="10" /></a>
+                    </div>
+                </div>
+                <div id="flash">
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"
+                        width="728" height="224" viewastext>
+                        <param name="movie" value="banner.swf" />
+                        <param name="quality" value="high" />
+                        <param name="wmode" value="transparent" />
+                        <embed src="banner.swf" width="728" height="224" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer"
+                            type="application/x-shockwave-flash" wmode="transparent"></embed></object></div>
+                <div id="placeholders" style="height: 300px">
+                    <div id="placeholder1">
+                        <h1 class="seller_heading">
+                        </h1>
+                        <div id="hot_back">
+                            <table  border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                    <td colspan="2" style="height: 10px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="10" valign="top">
+                                        <img src="image/bullet.gif" width="3" height="8" style="padding: 2px 0px 0px 0px" /></td>
+                                    <td  valign="top" class="text-bold-contact">
+                                        <a href="motor_pvt_car.html">Motor Pvt. Car</a></td>
+                                </tr>
+                                <tr>
+                                    <td width="10" valign="top">
+                                        <img src="image/bullet.gif" width="3" height="8" style="padding: 2px 0px 0px 0px" /></td>
+                                    <td valign="top" class="text-bold-contact">
+                                        <a href="individual_personal_accident_policy.html">Individual Health/ Personal Accident</a></td>
+                                </tr>
+                                <tr>
+                                    <td width="10" valign="top">
+                                        <img src="image/bullet.gif" width="3" height="8" style="padding: 2px 0px 0px 0px" /></td>
+                                    <td valign="top" class="text-bold-contact">
+                                        <a href="fire_policy.html">Fire &amp; Allied Perils</a></td>
+                                </tr>
+                                <tr>
+                                    <td width="10" valign="top">
+                                        <img src="image/bullet.gif" width="3" height="8" style="padding: 2px 0px 0px 0px" /></td>
+                                    <td valign="top" class="text-bold-contact">
+                                        <a href="aapat_suraksha_bima_policy.html">Aapat Suraksha</a></td>
+                                </tr>
+                                <tr>
+                                    <td width="10" valign="top">
+                                        <img src="image/bullet.gif" width="3" height="8" style="padding: 2px 0px 0px 0px" /></td>
+                                    <td valign="top" class="text-bold-contact">
+                                        <a href="shopkepers_insurance_policy.html">Shopkeepers</a>, Home(<a href="householders.html">Householders&rsquo;</a>)
+                                        &amp;<a href="office_package_policy.html"> Office &ndash; package policies</a></td>
+                                </tr>
+                                <tr>
+                                    <td width="10" valign="top">
+                                        <img src="image/bullet.gif" width="3" height="8" style="padding: 2px 0px 0px 0px" /></td>
+                                    <td valign="top" class="text-bold-contact">
+                                        Rural sector oriented &ndash;<a href="farmer_package_policy.html"> Farmers&rsquo; Package</a>,
+                                        <a href="cattle_insurance_policy.html">Cattle policy</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                 <div id="placeholderNew">                    
+                       <h1 class="buy_online">
+                        </h1>
+                       <div class="accordion" >
+                        <h3>
+							 <a><span style="font-size:12px"><b> Individual Health Insurance </b></span></a>
+							 </h3>				                             
+                             <p class="text-bold-contact">
+                             -Instant policy for Individual/Family<br />
+                             -No medical tests requried<br /><br />
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             <input id="btnhealth" name="Bu1" type="button" onclick="OpenHealthIndividual()" value="Buy now" style="width:80px; font-weight: bold; background-image: none; background-color: #990099; color: #ffffff;" />
+                            </p>
+                             <h3>
+							 <a ><span style="font-size:12px"><b> Travel Insurance </b></span> </a>
+							  </h3>				                             
+                             <p class="text-bold-contact">
+                             -Instant policy issuance<br />
+                             -Specific policy for Students<br />
+                             -Specific policy for Travel within Asia<br /><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             <input id="btntravel" name="Bu2" type="button" onclick="OpenTravelPage()" value="Buy now" style="width:80px; font-weight: bold; background-image: none; background-color: #990099; color: #ffffff;" /> 
+                            </p>
+                             <h3>                           
+                            <!--<li>-->
+							 <a ><span style="font-size:12px"><b> Motor Insurance Renewal </b></span></a>
+							 </h3>				                             
+                             <p class="text-bold-contact">
+                             -Instant policy renewal <br />
+                             -Provision for No claim bonus<br />
+                             -Comprehensive policy for Two Wheeler/Private Car<br /><br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                             <input id="Button3" name="Bu3" type="button" onclick="OpenMotorInsurance()" value="Buy now" style="width:80px; font-weight: bold; background-image: none; background-color: #990099; color: #ffffff;" />
+                            </p>
+				     </div> 
+				    
+				    </div>
+
+<div id="placeholderKFamly">                    
+                    <div id="KFamily"  >                                                                 
+				        <table   cellspacing="0" cellpadding="0" align="right"  >
+							<tr>
+							<td  colspan="2" class="text-bold-contact"  >							 
+					      		&nbsp;<img src="image/new.gif" />
+					      		<br />		      				
+							   <a href="K Family.html">&nbsp;<blink> <B>K Family Care - Health &nbsp;&nbsp;Insurance </B></blink></a></td>
+							</tr>					 				  
+						 		 
+				       </table>
+							  
+                    </div>
+ </div>
+                   <div id="News_heading">
+                   <h1 class="News_headingImg">
+                      </h1>
+                        <div id="News_headingScroll">
+                        <table  cellspacing="0" cellpadding="0" align="center">
+                        <tr>
+                        <td>
+                         <span style="color:Red;font-weight:bold;" class="text-bold-contact"><b>Current News</b> &nbsp;<a  href="video/raghunathganj.mp4" target="_blank"><b></b>Download Video</a>  <br /></span>
+                         
+                          <marquee align="left" direction="up" onmouseout="this.start()" onmouseover="this.stop()" height="68px"
+                                                    scrollamount="1" scrolldelay="30" style="padding:0px; background-attachment: fixed; color: #6d6254; background-repeat: no-repeat;">
+                                                  
+                            <table  border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                    <td colspan="2" >
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="10" valign="top">
+                                        <img src="image/bullet.gif" width="3"  style="padding: 2px 0px 0px 0px" /></td>
+                                    <td  valign="top" class="text-bold-contact">
+                                        <a >Hon’ble then FM launches Saral Suraksha- micro insurance and awards agents licences at Universal Sompo’s Agent's Training Centre at Raghunathgunj, WB on 9th June 2012</a></td>
+                                </tr>
+                                <tr>
+                                    <td width="10" valign="top">
+                                        <img src="image/bullet.gif" width="3"  style="padding: 2px 0px 0px 0px" /></td>
+                                    <td valign="top" class="text-bold-contact">
+                                        <a href="News.html">View Photo</a></td>
+                                </tr>
+                               <tr>
+                                    <td width="10" valign="top">
+                                        <img src="image/bullet.gif" width="3"  style="padding: 2px 0px 0px 0px" /></td>
+                                    <td valign="top" class="text-bold-contact">
+                                        <a href="message-from-chairman.html">Chairman's Message</a></td>
+                                </tr>
+                            </table>
+                          </marquee>
+                            </td>
+                        </tr>
+                        </table>
+                        </div>
+                    </div> 
+                </div>
+                
+                
+            </div>
+             <div id="foooter">
+                <div id="address_bar" class="address">
+                    <b>Regd & Corp Office :</b> Universal Sompo General Insurance Co Ltd.
+                    Unit No 401, 4th Floor,Sangam Complex, 127, <br />Andheri Kurla Road,Andheri (E),
+                    Mumbai- 400059. Tel : 022-29211800, Fax : 022-29211844
+                    <br />
+                    <!--<b>Insurance is the subject matter of solicitation. IRDA Registration Number - 134 Control Number -ENG/WBHP/QLHELP/003/24May2012</b>-->
+                     Insurance is the subject matter of solicitation. <b>IRDA Registration Number - 134.</b> Control Number -ENG/WBHP/QLHELP/003/24May2012.
+                  <br />
+                    <a href="Privacy Policyindex.html">Privacy Policy</a>|
+                    <a href="DisclaimerIndex.html">Disclaimer</a>
+                    <div id="foooter1">
+            <table >
+                    <tr>
+                    <td  width="20%" style="text-align:left">
+                  <b>Best viewed with IE 7 and above with a resolution of 1024x768</b>  
+                    </td>
+                    <td width="20%" style="text-align:right">
+                  <b>Updated as on : 01/08/2012  </b> 
+                    </td>
+                    </tr>                   
+                    </table>
+            </div>
+                </div>
+            </div>
+            </div>
+
+</div>
+
+
+ <form id="formcontact" name="formcontact">
+    <div id="popupContactus" style="left: 0px; width: 274px; top: 0px; height: 387px">
+        <a id="popupContactCloseus" style="font-weight: bold">x</a>
+       <strong>
+        
+            Quick Contact </strong>
+        <hr />
+        <div id="divcontacttable">
+            <table style="width:350px;">
+                <tr>
+                    <td class="texttable" style="width:88px">
+                        Contact type</td>
+                    <td style="width: 193px">
+                        <select name="ctype" class="formhome" id="ctype" onchange='OnChange(this.form.ctype);'>
+                            <option value="Inquiry">Inquiry</option>
+                            <option value="Claim">Claim</option>
+                             <option value="other">other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="texttable" style="width:88px">
+                        Name*</td>
+                    <td style="width: 193px"><input name="cname" type="text" class="formhome" id="cname" maxlength="50" style="width: 150px" /></td>
+                </tr>
+                <tr>
+                    <td class="texttable" style="width:88px">
+                        Emailid*</td>
+                    <td style="width: 193px">
+                        <input name="cemailid" type="text" class="formhome" id="cemailid" maxlength="50" style="width: 150px" /></td>
+                </tr>
+                <tr> 
+                    <td class="texttable" style="width:88px">
+                        Phone Number*</td>
+                    <td style="width: 193px" >
+                        <input name="cphone" type="text" class="formhome" id="cphone" maxlength="50" style="width: 150px" /></td>
+                </tr>
+                <tr>
+                    <td class="texttable" style="width:88px">
+                        </td>
+                    <td style="width: 193px">
+                        <span style="font-size: 0.8em; font-family: Tahoma"><em>please enter phone number with
+                            your STD code</em></span></td>
+                </tr>
+                <tr>
+                    <td class="texttable" style="width: 88px">
+                        </td>
+                    <td style="width: 193px">
+                        </td>
+                </tr>
+                <tr>
+                    <td class="texttable" style="width: 88px">
+                        Comments*</td>
+                    <td style="width: 193px">
+                        &nbsp;<textarea name="ccomment" rows="3" class="formhome" id="ccomment" style="width: 150px"></textarea></td>
+                </tr>
+                
+                <tr ><td colspan="2">
+                <div id="policynum" style="display:none;"> 
+                <table>
+                <tr >
+                    <td class="texttable" style="width: 99px">
+                        Policy Number*</td>
+                    <td style="width: 196px">
+                        <input name="cpolicyno" type="text" class="formhome" id="cpolicyno" maxlength="50" style="width: 150px" /></td>
+                </tr>
+                </table>
+                </div>
+                </td><td></td></tr>
+               <tr>
+               <td colspan="2">
+               <div id="productrow">
+               <table>
+                <tr >
+                    <td class="texttable" style="width:78px">
+                        Product</td>
+                    <td style="width: 130px">
+                        &nbsp;<select name="Productslist" class="formhome" id="Productslist" style="width: 187px">
+                            <option value="Motor Pvt. Car">Motor Pvt. Car</option>
+                            <option value="Individual Health">Individual Health</option>
+                            <option value="Fire &amp; Allied Perils">Fire &amp; Allied Perils</option>
+                            <option value="Aapat Suraksha">Aapat Suraksha</option>
+                            <option value="Householders">Householders</option>
+                            <option value="Office Package Policies">Office Package Policies</option>
+                            <option value="Farmers&rsquo; Package">Farmers&rsquo; Package</option>
+                            <option value="Cattle Policy">Cattle Policy</option>
+                            <option value="Others">Others</option>
+                        </select></td>
+                </tr></table>
+                </div>
+               </td>
+               <td></td>
+               </tr>
+               
+                <tr>
+                    <td class="texttable" style="width: 88px">
+                    </td>
+                    <td style="width: 193px">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="texttable" style="width: 88px">
+                    </td>
+                    <td style="width: 193px">
+                        *<em> required fields</em></td>
+                </tr>
+            </table>
+            <hr />
+            <div style="float:right;padding-bottom:0px;padding-right:44px;"><input id="Button1" title="Submit" type="button" value="Submit" class="button" onclick="checkNewpop()"; /></div>
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" id="Table1" style="display: none;">
+                            <tr>
+                                <td class="formtext">
+                                    <span class="style1">We will get in touch with you shortly.</span></td>
+                            </tr>
+                        </table>
+      </div>
+    </div>
+  </form>   
+ <div id="PopupDivAskExpert" style="margin:-110px 60px 0px 450px;position:absolute; border:1px solid #ABB0B6; right:500px;left: 0px; width: 574px; top: 500px; height: 187px;display:none;background-color:LightSteelBlue;">        
+       
+        
+         <span class="text-bold-contact"> <strong>  Disclaimer</strong></span> 
+        <hr />
+        <div id="div2">
+            <table style="width:550px;" class="text-bold-contact">
+                <tr>                   
+                    <td style="width: 550px; color:Black; text-justify: inter-word; vertical-align: baseline; direction: ltr; text-align: justify;">
+                        USGI makes no representations or warranties of any kind, express or implied about the completeness, accuracy, reliability, suitability or availability with respect to link or the information, services or related graphics contained on the website for any purpose. Any reliance you place on such material is therefore strictly at your own risk. In no circumstances shall USGI be liable to you, directly or indirectly, or any other third parties for any loss or damage arising directly or indirectly from your use of or inability to use, this site or any of the material contained in it. Through this website you are able to link to other websites which are also not under the control of USGI. We have no control over the nature, content and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorsement of  the views expressed within them. At all times USGI recommends that you seek advice/counsel from your own doctors/medical resources.
+                    </td>
+                </tr>
+                <tr>
+                <td align="center">
+                <input type="button" style="width:50px;font-size:smaller" id="btnOk" runat="server" name="OK" value="OK" onclick="javascript:RedirectTopage();" />
+                <input type="button" style="width:50px;font-size:smaller" id="btncancel" runat="server" name="Back" value="Back" onclick="javascript:CloseDiv();" />
+                
+                </td>
+                </tr>
+             
+               
+            </table>
+            
+      </div>
+    </div>
+    
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12348426-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

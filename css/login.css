@@ -1,0 +1,48 @@
+
+p.notice {
+	position:relative;
+	display:block;
+	background: #fffcd3 url(../img/icon_notice.gif) no-repeat 10px 11px;
+	border: 1px solid #c2beb1;
+	padding:8px 10px 8px 40px;
+	color: #74655f;
+	font-size: 13px;
+}
+p.success {
+	position:relative;
+	display:block;
+	background: #D6F5EC url(../img/icon_success.gif) no-repeat 10px 11px;
+	border: 1px solid #33CCCC;
+	padding:8px 10px 8px 40px;
+	color: #000000;
+	font-size: 13px;
+}
+p.info {
+	position:relative;
+	display:block;
+	background: #d4ebfa url(../img/icon_info.gif) no-repeat 10px 11px;
+	border: 1px solid #90b1c7;
+	padding:8px 10px 8px 40px;
+	color: #4b6bab;
+	font-size: 13px;
+}
+p.error {
+	position:relative;
+	display:block;
+	background: #f6b9b9 url(../img/icon_error.gif) no-repeat 10px 11px;
+	border: 1px solid #e18484;
+	padding:8px 10px 8px 40px;
+	color: #c32727;
+	font-size: 13px;
+}
+p.error span, p.info span, p.notice span, p.success span { 
+	position: absolute;
+	right:7px;
+	top:7px;
+	font-weight:bold;
+	font-size:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	display:block;
+	padding:5px;
+	cursor:pointer;
+}
